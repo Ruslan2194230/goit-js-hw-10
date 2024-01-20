@@ -1,0 +1,2 @@
+!function(){var e={cardContainer:document.querySelector(".js-card-container"),searchFrom:document.querySelector(".js-search-form")};function n(n){var r=pokemonCardTpl(n);e.cardContainer.innerHTML=r}e.searchFrom.addEventListener("submit",(function(e){e.preventDefault();var r=e.currentTarget;(t=r.elements.query.value,fetch("https://pokeapi.co/api/v2/pokemon/".concat(t)).then((function(e){return e.json()}))).then(n).catch((function(e){console.log(e)})).finally((function(){return r.reset()}));var t}))}();
+//# sourceMappingURL=01-fetch-api.dffa63ad.js.map

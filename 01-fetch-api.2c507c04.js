@@ -1,0 +1,2 @@
+const e={cardContainer:document.querySelector(".js-card-container"),searchFrom:document.querySelector(".js-search-form")};function n(n){const t=pokemonCardTpl(n);e.cardContainer.innerHTML=t}e.searchFrom.addEventListener("submit",(function(e){e.preventDefault();const t=e.currentTarget;(r=t.elements.query.value,fetch(`https://pokeapi.co/api/v2/pokemon/${r}`).then((e=>e.json()))).then(n).catch((e=>{console.log(e)})).finally((()=>t.reset()));var r}));
+//# sourceMappingURL=01-fetch-api.2c507c04.js.map
